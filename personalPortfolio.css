@@ -1,0 +1,222 @@
+html {
+    width: 100%;
+    min-width: 400px;
+    max-width: 1980px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #00ace6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px; 
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar a:hover {
+    background-color: #00ace6;
+    color: #ccf2ff;
+}
+
+#navbar a.active {
+    background-color: #e6f9ff;
+    color: #cc2ff;
+}
+
+.navbar-right {
+    float: right;
+}
+
+body {
+    margin: 0;
+    font-family: arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    width: 100%;
+    min-width: 400px;
+}
+
+#welcome-section {
+    text-align: center;
+    padding: 300px 0 400px 0;
+}
+
+#welcome-section h1 {
+    margin-bottom: 10px;
+    font-size: 7vw;
+}
+
+.main {
+    margin-top: 15px;
+    padding-top: 30px;
+}
+
+#welcome-section h2 {
+    font-style: italic;
+    font-size: 2vw;
+}
+
+#projects {
+    background-color: hsl(30, 100%, 75%);
+    padding: 4em 0 9em 0;
+}
+
+.section-title {
+    font-size: 5vw;
+    text-align: center;
+    color: white;
+    margin: 2em 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 2em;
+    margin: 5em 2em;
+}
+
+.project-tile {
+    background-color: orange;
+}
+
+.sub-item {
+    text-align: center; /* vertically align title */
+}
+
+.project-tile a {
+    color: hsl(30, 100%, 90%);
+    text-decoration: none;
+}
+
+.project-tile a: hover {
+    background-color: #00ace6;
+    color: #fff;
+}
+
+.project-img {
+    max-with: 100%; /* Pairing max-width and height specifically to these dimensions, they will expand the extent of their size w/o media query */
+    height: auto;
+}
+
+button {
+    display: block;
+    border: none;
+    margin: 9em 0 6em 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    background-color: orange;
+    letter-spacing: 2px;
+}
+
+button a {
+    text-decoration: none;
+    color: hsl(30, 100%, 90%);
+}
+
+button:hover {
+    background-color: #00ace6;
+    color: white;
+}
+
+/* Start of contact section */
+#contact {
+    background-color: #5daec9;
+    color: white;
+    padding: 300px 0;
+}
+
+.socialMedia {
+    text-align: center;
+    word-spacing: 10px;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+
+.socialMedia a {
+    text-decoration: none;
+    color: #000;
+}
+
+.socialMedia a:hover {
+    color: #ccf2ff;
+}
+
+span {
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+}
+
+#footer {
+    background-color: #5daec9;
+    padding: 2em 1em;
+}
+
+footer p {
+    display: inline;
+}
+
+.footer-right {
+    float: right;
+}
+
+hr {
+    border: solid #00ace6;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 500px) {
+    #navbar a {
+        float: none; /* navbar centers ontop of eachother when screen shrinks */
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* navbar hovers black when the screen shrinks */
+    #navbar a:hover {
+        background-color: #000;
+        color: #ccf2ff;
+    }
+
+    /* navbar-right centers underneath navbar when screen shrinks */
+    .navbar-right {
+        display: block;
+        float: none;
+    }
+
+    /* all buttons hover when screen shrinks */
+    button:hover {
+        background-color: #000;
+    }
+
+    /* navbar centers ontop of eachother when screen shrinks */
+    #footer {
+        background-color: #5daec9;
+        padding: 2em 1em;
+    }
+
+    footer p {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-right {
+        float: none;
+    }
+}
